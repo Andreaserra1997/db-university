@@ -1,0 +1,15 @@
+1. 	SELECT YEAR(`enrolment_date`) AS `year`, COUNT(*) AS `students_joined` 
+	FROM `students` 
+	GROUP BY `year`;
+
+2. 	SELECT `office_address`, COUNT(*) AS `teachers_same_building` 
+	FROM `teachers` 
+	GROUP BY `office_address`;
+
+3. 	SELECT `exam_id`, AVG(`vote`) AS `media_vote` 
+	FROM `exam_student` 
+	GROUP BY `exam_id`;
+
+4.	SELECT `department_id` AS `department`, COUNT(*) AS `course`
+	FROM `degrees`
+	GROUP BY `department_id`;
